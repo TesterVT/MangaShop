@@ -1,5 +1,5 @@
 <h3 align="center">
-	<img src="https://tester.kappa.lol/zKGSn.png" width="100" alt="Logo"/><br/>
+	<img src="https://tester.kappa.lol/zKGSn.png" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
