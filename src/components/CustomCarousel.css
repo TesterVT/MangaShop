@@ -1,0 +1,23 @@
+.carousel-wrapper {
+    margin: 0 auto;
+    max-width: 800px; /* Adjust the max-width as needed */
+    position: relative;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .carousel-img {
+    object-fit: cover;
+    height: 400px;
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .carousel-caption h3, .carousel-caption p {
+    color: #fff;
+  }
+  

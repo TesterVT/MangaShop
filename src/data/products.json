@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "title": "Жизнь святого писателя",
+      "price": "569₽",
+      "oldPrice": "1282₽",
+      "discount": "55%",
+      "cashback": "99%",
+      "returns": "0%",
+      "images": [
+        "https://via.placeholder.com/800x400"
+      ],
+      "details": {
+        "manufacturer": "Россия",
+        "material": "Акрил, Металл",
+        "lockType": "Цепочка",
+        "style": "Повседневный",
+        "type": "Брелок"
+      },
+      "reviews": 15,
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "title": "Название книги",
+      "price": "1935₽",
+      "oldPrice": "2390₽",
+      "discount": "19%",
+      "images": [
+        "https://remanga.org/media/titles/holy-writers-life/80edadf5d2a8939a6b9666fd229e63a3.jpg"
+      ],
+      "details": {
+        "manufacturer": "Россия",
+        "material": "Акрил, Металл",
+        "lockType": "Цепочка",
+        "style": "Повседневный",
+        "type": "Брелок"
+      },
+      "reviews": 15,
+      "rating": 5
+    }
+  ]
+  

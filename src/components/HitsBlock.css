@@ -1,0 +1,91 @@
+/* HitsBlock.css */
+.hits-block-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px; /* Добавлен отступ снизу */
+}
+
+.hits-block {
+  width: 100%;
+  max-width: 1200px;
+  border: 2px solid #eca74c; /* Фиолетовая рамка */
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.hits-block-title {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  background-color: #ffffff;
+  padding: 0 10px;
+  font-size: 1.5rem;
+  color: #eca74c; /* Фиолетовый цвет заголовка */
+  font-weight: bold;
+}
+
+.product-card {
+  border: none;
+}
+
+.product-img-wrapper {
+  position: relative;
+}
+
+.product-img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.discount-label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.hit-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: orange;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.product-title {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.product-prices {
+  margin-top: 10px;
+}
+
+.old-price {
+  color: #888;
+  text-decoration: line-through;
+}
+
+.new-price {
+  color: #d32f2f;
+  font-size: 1.2rem;
+}
+
+.buy-button {
+  margin-top: 10px;
+  background-color: #eca74c;
+  border: none;
+}
+
+.buy-button:hover {
+  background-color: #fcd111;
+}

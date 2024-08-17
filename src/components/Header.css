@@ -1,0 +1,17 @@
+/* Header.css */
+
+.subheader {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .main-header {
+    position: -webkit-sticky; /* Для Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* Убедитесь, что значение z-index выше, чем у других элементов */
+    background-color: white; /* Фон, чтобы скрыть контент под ним */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
