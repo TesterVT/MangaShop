@@ -1,28 +1,38 @@
-import React, { useState } from 'react';
-import AuthModal from './AuthModal';
-import { Container, Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Container, Navbar, Nav, Form, FormControl, Button, Dropdown } from 'react-bootstrap';
 import { FaBars, FaSearch, FaUser, FaBox, FaHeart, FaShoppingCart } from 'react-icons/fa';
-import './Header.css';
+import AuthModal from './AuthModal';
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
+  const [categories, setCategories] = useState([]);
+  const [showCatalog, setShowCatalog] = useState(false);
+
+  useEffect(() => {
+    // Загружаем категории из файла catalog.json
+    fetch('./data/catalog.json')
+      .then((response) => response.json())
+      .then((data) => setCategories(data))
+      .catch((error) => console.error('Error loading catalog:', error));
+  }, []);
 
   const handleShowModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
+  const toggleCatalog = () => setShowCatalog(!showCatalog);
 
   return (
     <>
-      <Navbar className="main-header" variant="light">
+      <Navbar>
         <Container>
-          <Navbar.Brand href="#" variant="outline-warning">
+          <Navbar.Brand href="#">
             <img
-              src="https://avatanplus.com/files/resources/original/57b454b5790bf156986ae4f8.png" // replace with the actual path to your logo
+              src="https://avatanplus.com/files/resources/original/57b454b5790bf156986ae4f8.png"
               height="40"
               className="d-inline-block align-top"
               alt="RU-MangaShop"
             />
           </Navbar.Brand>
-          <Button variant="warning" className="me-2">
+          <Button variant="warning" className="me-2" onClick={toggleCatalog}>
             <FaBars /> Каталог
           </Button>
           <Form className="d-flex flex-grow-1">
@@ -52,6 +62,18 @@ const Header = () => {
           </Nav>
         </Container>
       </Navbar>
+
+      {/* Выпадающий список категорий */}
+      {showCatalog && (
+        <Dropdown.Menu show className="catalog-dropdown">
+          {categories.map((category) => (
+            <Dropdown.Item key={category.id} href={'/category/${category.id}'}>
+              {category.name}
+            </Dropdown.Item>
+          ))}
+        </Dropdown.Menu>
+      )}
+
       <AuthModal show={showModal} handleClose={handleCloseModal} />
     </>
   );
