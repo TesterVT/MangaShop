@@ -4,7 +4,7 @@ import { FaVk, FaTelegramPlane, FaPhoneAlt } from 'react-icons/fa';
 
 const SubHeader = () => {
   return (
-    <Navbar bg="light" variant="light">
+    <Navbar className='purple' variant='dark'>
       <Container>
         <Nav className="me-auto">
           <Nav.Link href="#promotions">Акции</Nav.Link>

@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <>
-      <Navbar>
+      <Navbar className='darkpurple'>
         <Container>
           <Navbar.Brand href="#">
             <img

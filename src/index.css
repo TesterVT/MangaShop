@@ -1,7 +1,22 @@
+html {
+  color: #bac2de;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #1e1e2e;
+  color: #bac2de;
+}
+.purple {
+background-color: #1e1e2e;
+color: #aac2de;
+}
+.darkpurple {
+  background-color: #11111b;
+  color: #aac2de;
+
 }
 Рeader {
   background-color: #4caf50;
